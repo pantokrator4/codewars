@@ -278,3 +278,45 @@ function twoSort(s) {
   return s.sort()[0].split("").join("***")
 }
 */
+/*
+Remove exclamation marks
+function removeExclamationMarks(s) {
+  const regex = /[!]/g;
+  return s.replace(regex, "");
+}
+*/
+
+/*
+function getDrinkByProfession(param){
+  
+  const obj ={
+    "jabroni": "Patron Tequila",
+    "school counselor":	"Anything with Alcohol",
+    "programmer": "Hipster Craft Beer",
+    "bike gang member":"Moonshine",
+    "politician": "Your tax dollars",
+    "rapper":"Cristal"
+  }
+  return obj[param.toLowerCase()] || "Beer"
+  }
+*/
+
+/*
+function remove (string) {
+  return string.replace(/!$/, "");
+}
+*/
+
+/*function onesComplement(n) {
+  const arr = n.split('')
+  const newArr = [];
+  for (const i of arr) {
+    if ( i == '1') {
+      newArr.push('0')
+    } else if ( i == '0') {
+      newArr.push('1')
+    }
+  }
+  return newArr.join('')
+};
+*/
