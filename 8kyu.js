@@ -320,3 +320,51 @@ function remove (string) {
   return newArr.join('')
 };
 */
+
+/*
+Reverse words
+const reverseWords = str => {
+  const reversed = str.split('').reverse().join('');
+  return reversed.split(' ').reverse().join(' ');
+};
+*/
+
+/*
+
+ var capitals = function (word) {
+  let result = [];
+	const str = word.toUpperCase();
+  for ( let i=0; i < word.length ; i++) {
+    if ( word [i] === str [i] )
+      result.push(i)
+  }
+  return result
+};
+*/ 
+
+
+//twoOldestAges = ages => [...ages].sort((a,b) => a-b).slice(-2);
+
+//var replaceDots = str => str.replace(/\./g, "-");
+
+/*
+
+function sumOrProduct(array, n) {
+  const a = [...array].sort((a,b) => a-b).slice(0,n)
+  const b = [...array].sort((a,b) => a-b).slice("-"+n)
+  return a.reduce((acc, current) => acc * current, 1) == b.reduce((acc, current) => acc + current) ? "same" 
+  : a.reduce((acc, current) => acc * current, 1) > b.reduce((acc, current) => acc + current) ? "product" : "sum"
+};
+*/
+
+//TODO Expected: 'and apparently apparentlybutactuallynot voilewtfman', instead got: 'and apparentlybutactuallynot voilewtfman'
+/*
+function apparently(string) {
+  const regex = /\b(and|but)\b(?! apparently)/g
+  if (string.match(regex)) {
+    return string.replace(regex, "$1 apparently")
+  } else {
+    return string
+  }
+}
+*/
