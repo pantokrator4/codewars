@@ -368,3 +368,64 @@ function apparently(string) {
   }
 }
 */
+
+/*
+Number of Decimal Digits
+const digits = n => n.toString().length
+*/
+
+/*
+Gravity Flip
+const flip=(d, a)=>{
+  return d === "R" ? a.sort((a,b) => a-b) : a.sort((a,b) => a-b).reverse()
+*/
+
+/*
+Sum of Minimums!
+function sumOfMinimums(arr) {
+  let sum = 0;
+  const index = 0;
+  const newArr = arr.map((a) => a.sort((a,b) => a-b ))
+  for ( let i = 0; i < newArr.length; i++) {
+    sum += newArr[i][index]
+  }
+  return sum
+}
+*/
+
+/* 
+Alternate capitalization
+function capitalize(s){
+  const arr = s.split("");
+  const lower = arr.map((value, index) => index % 2 == 0? value.toUpperCase() : value).join('')
+  const upper = arr.map((value, index) => index % 2 == 0? value : value.toUpperCase()).join('')
+  return [lower, upper]
+}
+*/
+
+/*
+Bin to Decimal
+function binToDec(bin) {
+  return parseInt(bin, 2);
+}
+*/
+
+/*
+Filter out the geese
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  const newArr =[]
+  for ( let i = 0; i < birds.length; i++) {
+    if (
+      geese[0] !== birds[i] 
+      && geese[1] !== birds[i] 
+      && geese[2] !== birds[i]
+      && geese[3] !== birds[i]
+      && geese[4] !== birds[i]
+    ) {
+      newArr.push(birds[i])
+    }
+  }
+  return newArr
+};
+*/
