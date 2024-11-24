@@ -1,4 +1,5 @@
 /*
+✅
 arr = [3,5];
 function sumArray(array) {
   if (array) {
@@ -18,6 +19,7 @@ console.log(sumArray(arr))
 */
 
 /*
+✅
 var min = function(list){
   const sorted = list.sort(function (a, b) {
 return a - b;
@@ -33,6 +35,7 @@ return a - b;
 */
 
 /*
+✅
 function countBy(x, n) {
   let z = [];
   z.push(x);
@@ -44,6 +47,7 @@ function countBy(x, n) {
 */
 
 /*
+✅
 function shortcut (string) {
   const regex = /[a,e,i,o,u]/g
   return string.replace(regex, '');
@@ -52,12 +56,14 @@ shortcut('hello')
 */
 
 /*
+✅
 function getChar(c){
   return String.fromCharCode(c)
 }
 */
 
 /*
+✅
 function peopleWithAgeDrink(old) {
   if (old < 14) {
     return 'drink toddy';
@@ -72,6 +78,7 @@ function peopleWithAgeDrink(old) {
 */
 
 /*
+✅
 function xor(a, b) {
   if (a !== b) {
     return  true
@@ -83,6 +90,7 @@ console.log(xor(true,true))
 */
 
 /*
+✅
 function getRealFloor(n) {
   if (n < 0) {
     return n
@@ -96,6 +104,7 @@ console.log(getRealFloor(5))
 */
 
 /*
+✅
 function getRealFloor(n) {
   if (n<0) {
     return n
@@ -105,6 +114,7 @@ console.log(getRealFloor(-5))
 */
 
 /*
+✅
 const distinct = (a) => {
 return [...new Set(a)]
 }
@@ -112,6 +122,7 @@ console.log(distinct([1,2,3,4,5,6,6,6]))
 */
 
 /*
+✅
 const dub = (a) => {
   const arr = [];
   for (let i = 0; i < a.length; i++) {
@@ -127,6 +138,7 @@ console.log(dub([1,2,2]))
 
 
 /*
+✅
 function pipeFix(numbers){
   arr = [];
   for (let i = numbers[0]; i < numbers[numbers.length-1] + 1; i++) {
@@ -137,13 +149,14 @@ function pipeFix(numbers){
 console.log(pipeFix([1,2,3,12]))
 /*
 
-//const addFive = (num) => num + 1
+//✅ const addFive = (num) => num + 1
 
-//const problem = (x) => typeof x === 'number' ? x * 50 + 6 : "Error"
-//console.log(problem(5))
+//✅ const problem = (x) => typeof x === 'number' ? x * 50 + 6 : "Error"
+//✅ console.log(problem(5))
 
 
 /*
+✅
 function nameShuffler(str){
   const splited = (str.split(' '));
   [splited[0], splited[splited.length - 1]] = [splited[splited.length - 1], splited[0]];
@@ -153,9 +166,10 @@ console.log(nameShuffler('john McClane'))
 */
 
 
-// const stringy = (size) => size % 2 === 0 && size !== 0 ? '10'.repeat(size / 2) : '10'.repeat(size / 2) + 1;
+//✅ const stringy = (size) => size % 2 === 0 && size !== 0 ? '10'.repeat(size / 2) : '10'.repeat(size / 2) + 1;
 
 /*
+✅
 function divisibleBy(numbers, divisor){
   arr = [];
   for ( const num of numbers) {
@@ -168,12 +182,14 @@ function divisibleBy(numbers, divisor){
 */
 
 /*
+✅
 function plural(n) {
   return n !== 1? true : false
 }
 */
 
 /*
+✅
 function howManyLightsabersDoYouOwn(name) {
   obj = {Adam: 0, Zach: 18}
   return obj.name || 0
@@ -182,7 +198,7 @@ console.log(howManyLightsabersDoYouOwn(Zach))
 */
 
 /*
-class Person {
+✅ class Person {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -197,6 +213,7 @@ john.met()
 */
 
 /*
+✅
 function mergeArrays(arr1, arr2) {
   const newArr = [...arr1, ...arr2];
   const dublic = [...new Set(newArr)]
@@ -204,16 +221,16 @@ function mergeArrays(arr1, arr2) {
 };
 */
 
-// Grasshopper - If/else syntax debug
+//✅ Grasshopper - If/else syntax debug
 
-//const checkAlive = (health) => health > 0 ? true : false;
+//✅ const checkAlive = (health) => health > 0 ? true : false;
 
-// Capitalization and Mutability
+//✅ Capitalization and Mutability
 
-//const capitalizeWord = word => `${word[0].toUpperCase()}${word.substring(1)}`;
+//✅ const capitalizeWord = word => `${word[0].toUpperCase()}${word.substring(1)}`;
 
 /*
-Multiplication table for number
+✅ Multiplication table for number
 
 function multiTable(n) {
   let result = '';
@@ -228,20 +245,20 @@ function multiTable(n) {
 */
 
 /*
-My head is at the wrong end!
+✅ My head is at the wrong end!
 
 const fixTheMeerkat = arr => [arr[0],arr[1], arr[arr.length -1]] = [arr[arr.length -1],arr[1], arr[0]];
 */
 
 /*
-Welcome to the City
+✅ Welcome to the City
 
 const sayHello = ( name, city, state ) => {
   return `Hello, ${name.join(' ')}, Welcome to ${city}, ${state}!`
 }
 */
 /*
-Count of positives / sum of negatives
+✅ Count of positives / sum of negatives
 
 function countPositivesSumNegatives(input) {
   const count = [];
@@ -266,20 +283,20 @@ function countPositivesSumNegatives(input) {
 */
 
 /*
-Hex to Decimal
+✅ Hex to Decimal
 
 const hexToDec = hexString => parseInt(hexString, 16)
 */
 
 /*
-Sort and Star
+✅ Sort and Star
 
 function twoSort(s) {
   return s.sort()[0].split("").join("***")
 }
 */
 /*
-Remove exclamation marks
+✅ Remove exclamation marks
 function removeExclamationMarks(s) {
   const regex = /[!]/g;
   return s.replace(regex, "");
@@ -287,6 +304,7 @@ function removeExclamationMarks(s) {
 */
 
 /*
+✅
 function getDrinkByProfession(param){
   
   const obj ={
@@ -302,12 +320,15 @@ function getDrinkByProfession(param){
 */
 
 /*
+✅
 function remove (string) {
   return string.replace(/!$/, "");
 }
 */
 
-/*function onesComplement(n) {
+/*
+✅
+function onesComplement(n) {
   const arr = n.split('')
   const newArr = [];
   for (const i of arr) {
@@ -322,7 +343,8 @@ function remove (string) {
 */
 
 /*
-Reverse words
+✅ Reverse words
+
 const reverseWords = str => {
   const reversed = str.split('').reverse().join('');
   return reversed.split(' ').reverse().join(' ');
@@ -330,7 +352,7 @@ const reverseWords = str => {
 */
 
 /*
-
+✅
  var capitals = function (word) {
   let result = [];
 	const str = word.toUpperCase();
@@ -343,12 +365,12 @@ const reverseWords = str => {
 */ 
 
 
-//twoOldestAges = ages => [...ages].sort((a,b) => a-b).slice(-2);
+//✅ twoOldestAges = ages => [...ages].sort((a,b) => a-b).slice(-2);
 
-//var replaceDots = str => str.replace(/\./g, "-");
+//✅ var replaceDots = str => str.replace(/\./g, "-");
 
 /*
-
+✅
 function sumOrProduct(array, n) {
   const a = [...array].sort((a,b) => a-b).slice(0,n)
   const b = [...array].sort((a,b) => a-b).slice("-"+n)
@@ -357,8 +379,10 @@ function sumOrProduct(array, n) {
 };
 */
 
-//TODO Expected: 'and apparently apparentlybutactuallynot voilewtfman', instead got: 'and apparentlybutactuallynot voilewtfman'
+
 /*
+❓ TODO Expected: 'and apparently apparentlybutactuallynot voilewtfman', instead got: 'and apparentlybutactuallynot voilewtfman'
+
 function apparently(string) {
   const regex = /\b(and|but)\b(?! apparently)/g
   if (string.match(regex)) {
@@ -370,18 +394,21 @@ function apparently(string) {
 */
 
 /*
-Number of Decimal Digits
+✅ Number of Decimal Digits
+
 const digits = n => n.toString().length
 */
 
 /*
-Gravity Flip
+✅ Gravity Flip
+
 const flip=(d, a)=>{
   return d === "R" ? a.sort((a,b) => a-b) : a.sort((a,b) => a-b).reverse()
 */
 
 /*
-Sum of Minimums!
+✅ Sum of Minimums!
+
 function sumOfMinimums(arr) {
   let sum = 0;
   const index = 0;
@@ -394,7 +421,8 @@ function sumOfMinimums(arr) {
 */
 
 /* 
-Alternate capitalization
+✅ Alternate capitalization
+
 function capitalize(s){
   const arr = s.split("");
   const lower = arr.map((value, index) => index % 2 == 0? value.toUpperCase() : value).join('')
@@ -404,14 +432,16 @@ function capitalize(s){
 */
 
 /*
-Bin to Decimal
+✅ Bin to Decimal
+
 function binToDec(bin) {
   return parseInt(bin, 2);
 }
 */
 
 /*
-Filter out the geese
+✅ Filter out the geese
+
 function gooseFilter (birds) {
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
   const newArr =[]
@@ -428,4 +458,102 @@ function gooseFilter (birds) {
   }
   return newArr
 };
+*/
+
+/*
+✅ Digitize
+
+const digitize = n => {
+  const newArr = []
+  const arr = n.toString().split("")
+  for (let i of arr) {
+    newArr.push(Number(i))
+  }
+  return newArr
+}
+*/
+  
+/*
+✅ Enumerable Magic #25 - Take the First N Elements
+
+function take(arr, n) {
+  return arr.slice(0, n);
+}
+*/
+
+/*
+✅ Fizz Buzz 
+
+function fizzbuzz(n) {
+  const newArr = [];
+  for (let i=1; i<n + 1; i++) {
+    newArr.push(i)
+  }
+  for (let i=0; i < newArr.length; i++) {
+     if (newArr[i] % 3 == 0 && newArr[i] % 5 == 0) {
+      newArr.splice(i, 1, "FizzBuzz")
+    } else if (newArr[i] % 5 == 0) {
+      newArr.splice(i, 1, "Buzz")
+    } else if (newArr[i] % 3 == 0) {
+      newArr.splice(i, 1, "Fizz")
+    }
+  }
+  return newArr
+}
+*/
+
+/*
+✅ Difference of Volumes of Cuboids
+const findDifference = (a, b) => Math.abs(a.reduce((acc,cur) => acc*cur) - b.reduce((acc,cur) => acc*cur))
+*/
+
+/*
+✅ Grasshopper - Debug sayHello
+const sayHello = name => `Hello, ${name}`
+*/
+
+/* 
+✅ Reversing Words in a String
+const reverse = string => string.split(" ").reverse().join(" ")
+*/
+
+/*
+✅ Alan Partridge II - Apple Turnover
+const apple = x => x ** 2 > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox."
+*/
+
+
+
+/*
+function digitize(n) {
+  return n.toString().split("").reverse()
+  
+ }
+*/
+
+/*
+❓ TODO solve the problem with '0' in tail.
+function formatMoney(amount){
+  const arr = amount.toString().split("")
+  if ( arr.includes(".")) {
+    return `$${amount}`
+  } else if (!arr.includes(".")) {
+    return `$${amount}.00`
+  } 
+}
+console.log(formatMoney(30.5))
+*/
+
+/*
+✅ Factorial
+function factorial(n){
+  const arr =[]
+  if (n !== 0) {
+  for (let i=1; i<=n; i++) {
+    arr.push(i)
+  }
+  return arr.reduce((acc, cur) => acc * cur)
+  }
+  return 1
+}
 */
