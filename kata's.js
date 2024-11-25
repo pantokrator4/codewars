@@ -531,18 +531,11 @@ function digitize(n) {
  }
 */
 
-/*
-❓ TODO solve the problem with '0' in tail.
-function formatMoney(amount){
-  const arr = amount.toString().split("")
-  if ( arr.includes(".")) {
-    return `$${amount}`
-  } else if (!arr.includes(".")) {
-    return `$${amount}.00`
-  } 
-}
-console.log(formatMoney(30.5))
-*/
+
+//✅ Dollars and Cents
+//const formatMoney = amount => `$${amount.toFixed(2)}`
+
+
 
 /*
 ✅ Factorial
@@ -556,4 +549,66 @@ function factorial(n){
   }
   return 1
 }
+*/
+
+/*
+✅ Sum of Multiples
+function sumMul(n,m){
+  let sum = 0;
+    if ( n > 0 && m > 0) {
+      for ( let i = n; i < m; i++) {
+        sum += i % n == 0? i : 0
+    }
+    return sum
+ }
+  return "INVALID"
+}
+*/
+/*
+✅ Are the numbers in order?
+function inAscOrder(arr) {
+  const arr2 = [...arr].sort((a,b) => a-b)
+  
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] !== arr2[i]) {
+      false
+    }
+  }
+  return true
+  }
+*/
+
+/*
+✅ Remove First and Last Character Part Two
+const array = string => {
+  const str = string.split(',').slice(1,-1)
+  return str.length > 0 ? str.join(" ") : null
+}
+*/
+
+//✅ Is this my tail?
+//const correctTail = (b,t) => b[b.length -1] == t;
+
+//✅ Simple multiplication
+// const simpleMultiplication = n => n % 2 === 0 ? n * 8 : n * 9;
+
+
+/*
+✅ Power
+function numberToPower(number, power){
+  let sum = 1;
+  for (let i=1; i <= power; i++) {
+    sum *= number
+  }
+  return sum
+  }
+  console.log(numberToPower(10,4))
+*/
+
+/*
+✅ Simple validation of a username with regex
+function validateUsr(username) {
+  return /^[a-z\d_]{4,16}$/.test(username)
+}
+console.log(validateUsr(''))
 */
