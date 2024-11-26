@@ -612,3 +612,94 @@ function validateUsr(username) {
 }
 console.log(validateUsr(''))
 */
+
+/*
+✅ Return the day
+function whatday(num) { 
+  const obj = {
+    1 : "Sunday",
+    2 : "Monday",
+    3 : "Tuesday",
+    4 : "Wednesday",
+    5 : "Thursday",
+    6 : "Friday",
+    7 : "Saturday",
+  }
+  return num <= 7 && num > 0 ? obj[num] : 'Wrong, please enter a number between 1 and 7'
+ }
+*/
+
+/*
+✅ Credit Card Mask
+const maskify = cc => {
+  let len = cc.length -4
+return cc.length > 4 ? `${("#".repeat(len))}${cc.slice(len)}` : cc
+}
+*/
+
+// ✅ const getCount = str => str.match(/[aeiou]/g).length
+
+/*
+✅ Square Every Digit
+function squareDigits(num){
+  const newNum = num.toString().split("").map(Number)
+  let sum = []
+  for (let n of newNum){
+    sum.push(n ** 2)
+  }
+  return Number(sum.join(""))
+}
+*/
+
+/*
+✅ Highest and Lowest
+function highAndLow(numbers){
+  const newNum = numbers.split(" ").map(Number).sort((a,b) => a-b)
+  return  `${newNum[newNum.length -1]} ${newNum[0]}`
+}
+*/
+//✅ Descending Order
+//const descendingOrder = n => Number(n.toString().split("").sort((a,b) =>a-b).reverse().join(""))
+
+/*✅
+function filter_list(l) {
+  const newArr = []
+  for ( let n of l) {
+    if (typeof n == 'number')
+      newArr.push(n)
+  }
+  return newArr
+}
+console.log(filter_list([1,2,'aasf','1','123',123]))
+*/
+
+/*
+✅Get the Middle Character
+function getMiddle(s) {
+  let odd = Math.floor(s.length/2-1)
+  let even = Math.floor(s.length/2)
+  if (s.length > 2) {
+    return s.length % 2==0 ? s.slice(odd, s.length - odd) : s.slice(even,  s.length - even)
+  }
+  return s
+}
+console.log(getMiddle("123456"))
+*/
+
+
+/*
+function accum(s) {
+  let res = ""
+  for (let i=0; i<s.length; i++) {
+    res += `${s[i].toUpperCase()}${s[i].repeat(i).toLowerCase()}-`
+  }
+  return res.slice(0,-1)
+}
+
+*/
+/*
+function squareSum(numbers){
+  let sq = numbers.map((a) => a**2)
+  return sq.reduce((acc,cur) => acc + cur)
+}
+*/
