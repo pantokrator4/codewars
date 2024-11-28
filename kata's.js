@@ -686,8 +686,7 @@ function getMiddle(s) {
 console.log(getMiddle("123456"))
 */
 
-
-/*
+/*✅
 function accum(s) {
   let res = ""
   for (let i=0; i<s.length; i++) {
@@ -695,11 +694,45 @@ function accum(s) {
   }
   return res.slice(0,-1)
 }
-
 */
-/*
+
+/*✅
 function squareSum(numbers){
   let sq = numbers.map((a) => a**2)
   return sq.reduce((acc,cur) => acc + cur)
 }
 */
+
+/*✅
+function sumCubes(n){
+  let sum = 0;
+  for (i =1; i <=n; i++) {
+    sum += i**3
+  }
+  return sum
+}
+*/
+
+/*✅
+function toCsvText(array) {
+  let arr = array.map((a) => a.join(","))
+  return arr.join("\n") 
+}
+*/
+
+/*✅
+const defineSuit = card => {
+  return card.match(/♣/) ? 'clubs' 
+  : card.match(/♦/) ? 'diamonds' 
+  : card.match(/♥/) ? 'hearts' 
+  : card.match(/♠/) ? 'spades' 
+  : ''
+}
+*/
+
+/*function abbrevName(name){
+  let sav = name.split(" ").map(n =>n[0])
+  return `${sav[0]}.${sav[1]}.`
+}
+*/
+
