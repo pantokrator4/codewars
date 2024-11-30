@@ -730,9 +730,62 @@ const defineSuit = card => {
 }
 */
 
-/*function abbrevName(name){
+/*✅
+function abbrevName(name){
   let sav = name.split(" ").map(n =>n[0])
   return `${sav[0]}.${sav[1]}.`
 }
 */
 
+/*✅
+var summation = function (num) {
+  let sum = 0;
+  for (let i= 1; i <= num; i++) {
+     sum += i
+   }
+  return sum
+}
+  */
+
+/*✅
+function basicOp(oper, val1, val2){
+  return oper == "+" ? val1 + val2 
+  : oper == "-" ? val1 - val2 
+  : oper == "*" ? val1 * val2 
+  : oper == "/"? val1 / val2 : ""
+}
+*/
+
+/*✅
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
+*/
+
+/*✅
+function lovefunc(fl1, fl2){
+  return fl1 % 2 == 0 && fl2 % 2 !== 0 || fl1 % 2 !== 0 && fl2 % 2 == 0 ? true : false
+}
+*/
+
+/*✅
+function findNeedle(haystack) {
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] == 'needle') {
+      return `found the needle at position ${i}`
+    }
+  }
+}
+*/
+
+/*✅
+function areYouPlayingBanjo(name) {
+   return name[0].match(/r/i) ? `${name} plays banjo` : `${name} does not play banjo`
+}
+*/
+
+/*✅
+function paperwork(n, m) {
+  return n > 0 && m > 0 ? n* m : 0
+}
+*/
